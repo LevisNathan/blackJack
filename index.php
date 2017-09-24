@@ -9,9 +9,10 @@
     </head>  
         <body>
             <header>
-                <h1></h1>
+                <h2>House</h2>
+                <h3>Player</h3>
             </header>
-            <div>
+            
                 <?php
                 function mapNumberToCard($num) {
                 $cardValue = ($num % 13) + 1; 
@@ -105,7 +106,10 @@
                     // echo calculateHandValue($person["cards"]); 
                 }
                 
-                
+                $points1 = 0;
+                $points2=0;
+                $points3=0;
+                $temp_points=0;
                 function calculateHandValue($cards) {
                     $sum = 0; 
                     foreach ($cards as $card) {
@@ -116,10 +120,21 @@
                         }
                     }
                     
-                    
                     return $sum; 
                 }
-                echo $person["cards"];
+                
+            function displayWinner($total1, $total2, $person, $person2){
+                echo "Winner: ";
+                
+                if($total1 > $total2)
+                {
+                    echo "<img src='".$person["profilePicUrl"]."'>";
+                }
+                else if ($total2 > $total1)
+                {
+                    echo "<img src='".$person2["profilePicUrl"]."'>";
+                }
+            }
                 // function draw($person){
                 //     $tmp = array(
                         
@@ -133,13 +148,25 @@
                 );  
                 $house = array(
                 "name" => "image2", 
-                "profilePicUrl" => "./profile_pics/Nathan_Levis.JPG", 
+                "profilePicUrl" => "./profile_pics/url.png", 
                 "cards" => generateHand($deck)
                 );  
-                $score = calculateHandValue($house["cards"]);
+                
+                
+                echo "<h1>";
+                displayPerson($house);
+                echo "</h1>";
+                $points1=calculateHandValue($player["cards"]);
+                echo "<div>";
                 displayPerson($player);
+                echo "</div>";
+                $points2= calculateHandValue($house["cards"]);
+                
+                echo "<h4>";
+                displayWinner($points1, $points2, $player, $house);
+                echo "</h4>";
                 ?>
-            </div>
+            
         </body>
     <footer>
         

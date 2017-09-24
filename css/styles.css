@@ -1,15 +1,36 @@
 body {
-    display:block;
-    height: 100%;
-    width: 100%;
     background-image: url('poker.jpg');
 }
 div {
     color:white;
-    
     position:absolute;
-    top: 30%;
-    left: 47%;
+    top: 70%;
+    left: 60%;
     border: 15px ;
     padding: 10px;
+}
+h2{
+    position:absolute;
+    top: 17%;
+    left: 30%;
+    color:green;
+    
+}
+h3{
+    position:absolute;
+    top: 66%;
+    left: 60%;
+    color:cyan;
+    
+}
+h1{
+    color:white;
+    position:absolute;
+    top: 20%;
+    left: 30%;
+    border: 15px ;
+    padding: 10px;
+}
+h4{
+    color:gold;
 }
