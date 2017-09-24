@@ -1,0 +1,15 @@
+body {
+    display:block;
+    height: 100%;
+    width: 100%;
+    background-image: url('poker.jpg');
+}
+div {
+    color:white;
+    
+    position:absolute;
+    top: 30%;
+    left: 47%;
+    border: 15px ;
+    padding: 10px;
+}

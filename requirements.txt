@@ -1,0 +1,10 @@
+
+Requirement	Points:
+Must include at least two loops (e.g., for, while, do while)	15 pts
+Must include at least two conditions  (e.g., if, switch, ternary)	15 pts
+Must have at least 15 CSS rules in an external file 	10 pts
+Must use the rand() function at least once	10 pts
+Uses at least two images	10 pts
+Uses at least one array   15 pts
+Uses at least three array functions	15 pts
+All elements (loops, arrays, images, etc.) have a common goal 	10 pts
